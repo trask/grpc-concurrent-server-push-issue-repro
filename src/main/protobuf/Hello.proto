@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option java_package = "org.github.trask";
+
+service DownstreamService {
+  rpc connect (stream ClientReply) returns (stream ServerRequest);
+}
+
+message ServerRequest {
+}
+
+message ClientReply {
+}
